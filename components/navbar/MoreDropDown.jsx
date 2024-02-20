@@ -22,6 +22,7 @@ import { cn } from "@/lib/utils";
 import { Switch } from "../ui/switch";
 import { useTheme } from "next-themes";
 import { Label } from "../ui/label";
+import { signOut } from "next-auth/react";
 
 const MoreDropDown = () => {
     const [showModeToggle, setShowModeToggle] = useState(false);
@@ -92,10 +93,10 @@ const MoreDropDown = () => {
                             <p>Switch appearance</p>
                         </DropdownMenuItem>
 
-                        {/* <DropdownMenuItem className="menuItem" onClick={() => signOut()}>
-                        <LogOut size={20} />
-                        <p>Log out</p>
-                        </DropdownMenuItem> */}
+                        <DropdownMenuItem className="menuItem" onClick={() => signOut()}>
+                            <LogOut size={20} />
+                            <p>Log out</p>
+                        </DropdownMenuItem>
                     </>
                 )}
                 {showModeToggle && (
