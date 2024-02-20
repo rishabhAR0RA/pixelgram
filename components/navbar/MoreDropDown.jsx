@@ -4,8 +4,7 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuTrigger,
-    DropdownMenuLabel
+    DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 import {
     Activity,
@@ -17,12 +16,12 @@ import {
     Settings,
     Sun,
 } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Switch } from "./ui/switch";
+import { Switch } from "../ui/switch";
 import { useTheme } from "next-themes";
-import { Label } from "./ui/label";
+import { Label } from "../ui/label";
 
 const MoreDropDown = () => {
     const [showModeToggle, setShowModeToggle] = useState(false);

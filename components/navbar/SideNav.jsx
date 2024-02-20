@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "../Logo";
 import MoreDropDown from "./MoreDropDown";
 import NavLinks from "./NavLinks";
 

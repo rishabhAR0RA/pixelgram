@@ -10,7 +10,7 @@ import {
     Search,
 } from "lucide-react";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "../ui/button";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
