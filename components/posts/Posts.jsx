@@ -1,6 +1,15 @@
-const Posts = () => {
+import { fetchPosts } from "@/lib/data";
+import Post from "./Post";
+
+const Posts = async () => {
+    const posts = await fetchPosts();
+
     return (
-        <div>Posts</div>
+        <>
+            {posts.map((post) => (
+                <Post key={post.id} post={post} />
+            ))}
+        </>
     );
 }
 

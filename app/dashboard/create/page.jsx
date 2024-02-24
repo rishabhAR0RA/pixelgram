@@ -109,24 +109,44 @@ const Page = () => {
                             )}
 
                             {!!fileUrl && (
-                                <FormField
-                                    control={form.control}
-                                    name="caption"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel htmlFor="caption">Caption</FormLabel>
-                                            <FormControl>
-                                                <Input
-                                                    type="caption"
-                                                    id="caption"
-                                                    placeholder="Write a caption..."
-                                                    {...field}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
+                                <>
+                                    <FormField
+                                        control={form.control}
+                                        name="caption"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel htmlFor="caption">Caption</FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        type="caption"
+                                                        id="caption"
+                                                        placeholder="Write a caption..."
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                    <FormField
+                                        control={form.control}
+                                        name="location"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel htmlFor="location">Location</FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        type="location"
+                                                        id="location"
+                                                        placeholder="Enter location (optional)"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </>
                             )}
 
                             <Button type="submit" disabled={form.formState.isSubmitting}>
