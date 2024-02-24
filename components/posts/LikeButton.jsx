@@ -5,7 +5,7 @@ import { Like } from "@prisma/client";
 import { Heart } from "lucide-react";
 import { useOptimistic } from "react";
 import { likePost } from "@/lib/actions";
-import ActionIcon from "../Actionicon";
+import ActionIcon from "../ActionIcon";
 
 const LikeButton = ({ post, userId }) => {
     const predicate = (like) =>
