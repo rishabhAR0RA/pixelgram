@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { MessageCircle } from "lucide-react";
 import Link from "next/link";
 import LikeButton from "./LikeButton";
-import ActionIcon from "../Actionicon";
+import ActionIcon from "../ActionIcon";
 import ShareButton from "./ShareButton";
-// import BookmarkButton from "./BookmarkButton";
+import BookmarkButton from "./BookmarkButton";
 
 const PostActions = ({ post, userId, className }) => {
     return (
@@ -16,7 +16,7 @@ const PostActions = ({ post, userId, className }) => {
                 </ActionIcon>
             </Link>
             <ShareButton postId={post.id} />
-            {/* <BookmarkButton post={post} userId={userId} /> */}
+            <BookmarkButton post={post} userId={userId} />
         </div>
     );
 }
