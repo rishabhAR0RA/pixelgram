@@ -1,12 +1,13 @@
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
-const ActionIcon = ({ children }) => {
+function ActionIcon({ children, ...buttonProps }) {
     return (
         <Button
             type="submit"
             variant={"ghost"}
             size={"icon"}
             className="h-9 w-9"
+            {...buttonProps}
         >
             {children}
         </Button>
